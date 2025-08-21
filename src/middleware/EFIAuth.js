@@ -101,6 +101,7 @@ export async function webhookConfig() {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
+          "x-skip-mtls-checking": "true",
         },
         httpsAgent: httpsAgent,
       }
