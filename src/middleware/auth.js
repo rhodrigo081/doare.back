@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken"
 
 export const authenticateToken = (req, res, next) => {
-  const token = req.cookies.accessToken // ← Lê do cookie
+  const token = req.cookies.accessToken 
 
   if (!token) {
     return res.status(401).json({ error: "Token de acesso requerido" })
