@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 import DonationService from "../service/DonationService.js";
-import sseService from "../service/sseService.js";
+import sseService from "../service/SSEService.js";
 const donationServiceInstance = new DonationService();
 /**
  * Rota POST /api/webhook

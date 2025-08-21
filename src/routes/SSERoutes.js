@@ -1,5 +1,5 @@
 import express from "express";
-import sseService from "../service/sseService.js";
+import sseService from "../service/SSEService.js";
 
 const router = express.Router();
 
