@@ -2,6 +2,9 @@ import initializeEfi from "../config/efipay.js";
 import { v4 as uuidv4 } from "uuid";
 import { ExternalError } from "../utils/Errors.js";
 
+// Desabilita a validação MTLS(Apenas em ambiente de desenvolvimento)
+initializeEfi["validateMtls"] = false;
+
 // Gerencia as operaçoes relacionadas ao pix
 class PixService {
   constructor() {
